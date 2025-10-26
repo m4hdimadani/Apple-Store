@@ -1,3 +1,6 @@
+This project is built with Next.js v15 and Tailwind v4, which displays digital tools and is responsive for both mobile and desktop.
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
