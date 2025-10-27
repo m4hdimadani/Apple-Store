@@ -1,10 +1,12 @@
-import Navbar from '@/components/Navbar'
+"use client"
+
+import Header from '@/components/Header'
 import React from 'react'
 
 function HomePage() {
   return (
     <>
-    <Navbar />
+    <Header />
     </>
   )
 }
