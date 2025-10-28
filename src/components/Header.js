@@ -4,19 +4,19 @@ import hamburger from "../assets/svg/hamburger.svg";
 import Logo from "../assets/svg/app-store.svg";
 import HamburgerModal from "@/modal/HamburgerModal";
 import ShopingCard from "../assets/svg/shopping-cart.svg";
+import { useRouter } from "next/navigation";
 
 function Header() {
   const [hambur, setHambur] = useState(false);
-  const [bascet, setBascet] = useState("");
 
-  
+  const router = useRouter();
 
   const hamburgerHandler = () => {
     setHambur(true);
   };
 
   const bascetHandler = () => {
-   
+    router.push("/bascets");
   };
 
   return (
@@ -42,12 +42,16 @@ function Header() {
               <HamburgerModal />
             )}
             <div className="flex items-center gap-1 text-primary font-medium md:gap-5">
-              <Image className="w-8 md:13px" src={Logo} alt="logo" />
-              <p className="w-5 leading-4 md:w-fit md:text-[30px]">اپل استور</p>
+              <button className="cursor-pointer" onClick={() => {router.push("/")}}>
+                <Image className="w-8 md:13px" src={Logo} alt="logo" />
+                <p className="w-5 leading-4 md:w-fit md:text-[30px]">
+                  اپل استور
+                </p>
+              </button>
             </div>
             <div>
               <div>
-                <button onClick={bascetHandler}>
+                <button onClick={bascetHandler} className="cursor-pointer">
                   <Image src={ShopingCard} alt="bascets" />
                 </button>
               </div>
