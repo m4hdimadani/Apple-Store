@@ -55,7 +55,7 @@ function Header() {
             {/* وسط هدر (دکمه محصولات + سرچ) */}
             <div className="hidden lg:flex flex-1 justify-center items-center gap-4">
               {/* دکمه محصولات */}
-              <button className="h-11 px-5 flex items-center justify-center gap-3 rounded-full bg-primary" onClick={productHandler}>
+              <button className="h-11 px-5 flex items-center justify-center gap-3 rounded-full bg-primary cursor-pointer hover:bg-orange-700" onClick={productHandler}>
                 <div className="flex flex-col gap-1">
                   <span className="block h-0.5 w-4 bg-white"></span>
                   <span className="block h-0.5 w-4 bg-white"></span>
@@ -77,8 +77,8 @@ function Header() {
 
             {/* آیکون‌های سمت چپ */}
             <div className="flex gap-3 items-center">
-              <div className="relative">
-                <button onClick={bascetHandler} className="cursor-pointer">
+              <div className="relative ">
+                <button onClick={bascetHandler} className="cursor-pointer hover:h-6">
                   <Image src={ShopingCard} alt="bascets" />
                 </button>
                 <span className="block w-3 h-3 text-center text-[10px] bg-primary rounded-full text-white absolute -top-1 -right-1">
@@ -87,7 +87,7 @@ function Header() {
               </div>
 
               <div className="relative">
-                <button onClick={bascetHandler} className="cursor-pointer">
+                <button onClick={bascetHandler} className="cursor-pointer hover:h-6">
                   <Image src={hart} alt="hart" />
                 </button>
                 <span className="block w-3 h-3 text-center text-[10px] bg-primary rounded-full text-white absolute -top-1 -right-1">
