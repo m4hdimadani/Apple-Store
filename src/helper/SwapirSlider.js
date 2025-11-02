@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import one from "../assets/images/apple banner/1.jpg";
-import tow from "../assets/images/apple banner/2.jpg";
-import three from "../assets/images/apple banner/3.jpg";
-import four from "../assets/images/apple banner/4.jpg";
+import one from "../assets/images/apple banner/hardware_base__ecl2v43j73o2_large__1_-removebg-preview 1.jpg";
+import tow from "../assets/images/apple banner/Enclosure-removebg-preview 3.jpg";
+import three from "../assets/images/apple banner/Enclosure-removebg-preview 3 (2).jpg";
+import five from "../assets/images/apple banner/light_seal-removebg-preview 2.jpg";
 
 
 // Import Swiper styles
@@ -30,22 +30,23 @@ export default function SwapirSlaider() {
         }}
         navigation={true}
         modules={[Autoplay, Pagination]}
-        className="mySwiper   md:my-3 px-14"
+        className="mySwiper my-8  md:my-16 px-14"
         style={{
           "--swiper-pagination-color": "#FF8B14",
         }}
       >
         <SwiperSlide>
-          <Image src={one} alt="one" className="w-[324px] h-[300px] m-auto md:w-[1200px] md:h-[700px]"/>
+          <Image src={one} alt="one" className="w-[324px] h-[150px] m-auto  md:w-[1200px] md:h-[485px]"/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={tow} alt="tow" className="w-[324px] h-[300px] m-auto md:w-[1200px] md:h-[700px]"/>
+          <Image src={tow} alt="tow" className="w-[224px] h-[100px] m-auto  md:w-[900px] md:h-[400px]"/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={three} alt="three" className="w-[324px] h-[300px] m-auto md:w-[1200px] md:h-[700px]"/>
+          <Image src={three} alt="three" className="w-[224px] h-[100px] m-auto  md:w-[900px] md:h-[400px]"/>
         </SwiperSlide>
+
         <SwiperSlide>
-          <Image src={four} alt="four" className="w-[324px] h-[300px] m-auto md:w-[1200px] md:h-[700px]"/>
+          <Image src={five} alt="five" className="w-[224px] h-[100px] m-auto  md:w-[900px] md:h-[400px]"/>
         </SwiperSlide>
         
       
