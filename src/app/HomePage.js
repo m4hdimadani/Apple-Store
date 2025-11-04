@@ -1,5 +1,6 @@
 "use client";
 
+import AdvertisingBanner from "@/components/AdvertisingBanner";
 import Banner from "@/components/Banner";
 import Category from "@/components/Category";
 import CountDownPage from "@/components/CountDownPage";
@@ -12,7 +13,8 @@ function HomePage() {
       <Header />
       <Category />
       <Banner />
-      <CountDownPage />
+      <CountDownPage /> 
+      <AdvertisingBanner />
     </>
   );
 }
