@@ -1,9 +1,6 @@
-import React from 'react'
 
-function OffProducts() {
-  return (
-    <div>OffProducts</div>
-  )
+function ProductsSwiper() {
+  return <div>ProductsSwiper</div>;
 }
 
-export default OffProducts
+export default ProductsSwiper;
