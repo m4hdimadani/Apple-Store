@@ -14,10 +14,9 @@ import arrow from '../assets/svg/arrow.svg'
 
 export default function AdvertisingBanner() {
   const filter = products.filter((p) => p.id === 11);
-
-  
- 
- 
+  const filterOne = products.filter((p) => p.id === 1);
+  const filterFour = products.filter((p) => p.id === 18);
+  const filterSeven = products.filter((p) => p.id === 19);
 
   return (
     <>
@@ -61,7 +60,7 @@ export default function AdvertisingBanner() {
           </div>)) }
         </SwiperSlide>
         <SwiperSlide className=" container m-auto px-4 my-18 lg:mr-90">
-          {filter.map((p) => (<div key={p.id} className=" flex flex-col lg:flex-row px-4 lg:mr-12 pb-4 bg-lightGray rounded-2xl">
+          {filterOne.map((p) => (<div key={p.id} className=" flex flex-col lg:flex-row px-4 lg:mr-12 pb-4 bg-lightGray rounded-2xl">
             <Image src={p.image}  alt="image" className="h-68 w-full lg:w-107 lg:h-107 object-cover rounded-3xl shadow-[0_0_25px_10px_#00000032] relative bottom-8 lg:-right-12"/>
             <div className="flex flex-col justify-center lg:gap-6">
               <h4 className="text-xl lg:text-4xl font-semibold">{p.title}</h4>
@@ -85,7 +84,7 @@ export default function AdvertisingBanner() {
           </div>)) }
         </SwiperSlide>
         <SwiperSlide className="container  m-auto px-4 my-18 lg:mr-90">
-          {filter.map((p) => (<div key={p.id} className=" flex flex-col lg:flex-row px-4 lg:mr-12 pb-4 bg-lightGray rounded-2xl">
+          {filterFour.map((p) => (<div key={p.id} className=" flex flex-col lg:flex-row px-4 lg:mr-12 pb-4 bg-lightGray rounded-2xl">
             <Image src={p.image}  alt="image" className="h-68 w-full lg:w-107 lg:h-107 object-cover rounded-3xl shadow-[0_0_25px_10px_#00000032] relative bottom-8 lg:-right-12"/>
             <div className="flex flex-col justify-center lg:gap-6">
               <h4 className="text-xl lg:text-4xl font-semibold">{p.title}</h4>
@@ -109,7 +108,7 @@ export default function AdvertisingBanner() {
           </div>)) }
         </SwiperSlide>
         <SwiperSlide className=" container  m-auto px-4 my-18 lg:mr-90">
-          {filter.map((p) => (<div key={p.id} className=" flex flex-col lg:flex-row px-4 lg:mr-12 pb-4 bg-lightGray rounded-2xl">
+          {filterSeven.map((p) => (<div key={p.id} className=" flex flex-col lg:flex-row px-4 lg:mr-12 pb-4 bg-lightGray rounded-2xl">
             <Image src={p.image}  alt="image" className="h-68 w-full lg:w-107 lg:h-107 object-cover rounded-3xl shadow-[0_0_25px_10px_#00000032] relative bottom-8 lg:-right-12"/>
             <div className="flex flex-col justify-center lg:gap-6">
               <h4 className="text-xl lg:text-4xl font-semibold">{p.title}</h4>
@@ -132,10 +131,6 @@ export default function AdvertisingBanner() {
             </div>
           </div>)) }
         </SwiperSlide>
-        {/* <SwiperSlide></SwiperSlide>
-        <SwiperSlide></SwiperSlide>
-
-        <SwiperSlide></SwiperSlide> */}
       </Swiper>
     </>
   );

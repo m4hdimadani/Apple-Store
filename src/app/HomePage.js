@@ -2,12 +2,17 @@
 
 import AdvertisingBanner from "@/components/AdvertisingBanner";
 import Banner from "@/components/Banner";
+import BestProductsSwiper from "@/components/BestProductsSwiper";
 import Category from "@/components/Category";
 import CountDownPage from "@/components/CountDownPage";
 import Header from "@/components/Header";
+import { Bestp } from "@/productsId/Bestp";
+import { products } from "@/productsId/ProductsId";
 import React from "react";
 
 function HomePage() {
+
+  
   return (
     <>
       <Header />
@@ -15,6 +20,7 @@ function HomePage() {
       <Banner />
       <CountDownPage /> 
       <AdvertisingBanner />
+      <BestProductsSwiper />
     </>
   );
 }
