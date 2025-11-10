@@ -1,11 +1,9 @@
-import { Swiper, SwiperSlide } from "swiper/react";
 
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-
 import { FreeMode, Pagination } from "swiper/modules";
 import Image from "next/image";
-
 import arrow from "../assets/svg/arrow--left.svg";
 import { useRouter } from "next/navigation";
 import { Bestp } from "@/productsId/Bestp";
@@ -16,68 +14,72 @@ function BestProductsSwiper() {
   const productHandler = () => router.push("/Products/Best-Products");
 
   return (
-    <div>
-      <div className="container m-auto px-6 flex justify-between items-center">
-        <div>
-          <p className="text-[18px] md:text-3xl font-semibold">
-            پرفروشترین محصولات
-          </p>
-        </div>
-        <div>
-          <button
-            onClick={productHandler}
-            className="text-sm leading-3 md:text-2xl flex justify-between items-center gap-2"
-          >
-            مشاهده همه
-            <Image src={arrow} alt="arrow" className="md:w-6" />
-          </button>
-        </div>
+    <section className="my-10">
+      <div className="container mx-auto px-4 md:px-8 flex justify-between items-center mb-6">
+        <p className="text-lg md:text-2xl font-semibold text-gray-800">
+          پرفروش‌ترین محصولات
+        </p>
+        <button
+          onClick={productHandler}
+          className="text-sm md:text-lg flex items-center gap-2 text-orange-500 hover:text-orange-600 transition-colors"
+        >
+          مشاهده همه
+          <Image src={arrow} alt="arrow" className="w-4 md:w-5" />
+        </button>
       </div>
-      <Swiper
-        slidesPerView={4}
-        spaceBetween={30}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper "
-        style={{
-          "--swiper-pagination-color": "#FF8B14",
-        }}
-      >
-        <div>
+      <div className="container mx-auto px-4 md:px-8">
+        <Swiper
+          slidesPerView={2}
+          spaceBetween={16}
+          freeMode
+          pagination={{ clickable: true }}
+          breakpoints={{
+            640: { slidesPerView: 2.5, spaceBetween: 20 },
+            1024: { slidesPerView: 4, spaceBetween: 24 },
+            1280: { slidesPerView: 5, spaceBetween: 28 },
+          }}
+          modules={[FreeMode, Pagination]}
+          className="mySwiper !pb-10 md:!pb-12"
+          style={{
+            "--swiper-pagination-color": "#FF8B14",
+            "--swiper-pagination-bottom": "0px",
+          }}
+        >
           {Bestp.map((i) => (
-            <div key={i.id}>
-              {
-                <div>
-                  <SwiperSlide key={i.id} className="h-82 min-w-50  md:min-w-80 md:h-135 ">
-                    <div className="  h-82 min-w-50  md:min-w-80 md:h-135 bg-[#f6f6f6] rounded-xl p-3 md:p-3">
-                      <div className="bg-white h-55 md:h-75 w-full md:w-80 flex flex-col items-center justify-center rounded-lg ">
-                        <div className="flex justify-center gap-2">
-                          <div className="w-3 h-3 md:h-5 rounded-full bg-[#ffda79]"></div>
-                          <div className="w-3 h-3 md:h-5 rounded-full bg-[#ececec]"></div>
-                          <div className="w-3 h-3 md:h-5 rounded-full bg-[#828282]"></div>
-                        </div>
-                        <Image src={i.image} alt="image" className="w-40 " />
-                      </div>
-                      <div className="flex flex-col divide-y divide-[#e4e4e4] mt-2">
-                        <h5 className="text-sm md:text-[18px] text-center font-semibold px-3 md:px-8 md:leading-9 py-2 md:py-5">
-                          {i.title}
-                        </h5>
-                        <p className="text-center py-2 md:text-xl md:py-4">
-                          {i.price.toLocaleString("fa-IR")} تومان
-                        </p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
+            <SwiperSlide key={i.id}>
+              <div className="bg-[#f8f8f8] rounded-2xl shadow-sm hover:shadow-md transition duration-200 p-3 md:p-4 flex flex-col h-[280px] md:h-[350px] cursor-pointer">
+                <div className="bg-white rounded-xl flex flex-col items-center justify-center flex-1 p-4">
+                  <div className="flex justify-center gap-2 mb-3">
+                    <span className="w-3 h-3 rounded-full bg-[#ffda79]" />
+                    <span className="w-3 h-3 rounded-full bg-[#ececec]" />
+                    <span className="w-3 h-3 rounded-full bg-[#828282]" />
+                  </div>
+                  <div className="w-full flex justify-center items-center">
+                    <Image
+                      src={i.image}
+                      alt={i.title}
+                      className="w-24 md:w-28 lg:w-32 object-contain h-28 md:h-36"
+                    />
+                  </div>
                 </div>
-              }
-            </div>
+
+                <div className="flex flex-col divide-y divide-gray-200 mt-2">
+                  <h5 className="text-sm md:text-base text-center font-semibold text-gray-700 py-2 line-clamp-2 h-[48px] md:h-[54px]">
+                    {i.title}
+                  </h5>
+                  <p className="text-center py-2 text-orange-500 text-sm md:text-base font-medium">
+                    {i.price.toLocaleString("fa-IR")} تومان
+                  </p>
+                </div>
+                <div>
+                  <button className="absolute bottom-3 left-3 md:bottom-4 md:left-4 w-6 h-6 md:w-10 md:h-10 text-white bg-primary text-xl md:text-3xl rounded-md md:rounded-lg flex items-center justify-center shadow-sm hover:scale-105 transition-transform -m-1 cursor-pointer">+</button>
+                </div>
+              </div>
+            </SwiperSlide>
           ))}
-        </div>
-      </Swiper>
-    </div>
+        </Swiper>
+      </div>
+    </section>
   );
 }
 
