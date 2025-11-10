@@ -51,8 +51,8 @@ export default function AdvertisingBanner() {
               </div>
               <div className="flex items-center gap-2 mt-2">
                 <p className="text-primary text-xs lg:text-xl font-medium lg:ml-4">با گارانتی الماس پایتخت همانند گارانتی اپل</p>
-                <button className="w-23 h-9 lg:h-11 lg:w-41 bg-primary text-white rounded-sm font-medium">خرید کنید</button>
-                <button className="w-6 h-7 lg:h-11 lg:w-11 flex items-center justify-center bg-primary opacity-50 rounded-lg">
+                <button className="w-23 h-9 lg:h-11 lg:w-41 bg-primary text-white rounded-sm font-medium cursor-pointer hover:bg-orange-700">خرید کنید</button>
+                <button className="w-6 h-7 lg:h-11 lg:w-11 flex items-center justify-center bg-primary opacity-50 rounded-lg cursor-pointer">
                   <Image src={arrow} alt="arrow" className="lg:w-5"/>
                 </button>
               </div>
@@ -75,8 +75,8 @@ export default function AdvertisingBanner() {
               </div>
               <div className="flex items-center gap-2 mt-2">
                 <p className="text-primary text-xs lg:text-xl font-medium lg:ml-4">با گارانتی الماس پایتخت همانند گارانتی اپل</p>
-                <button className="w-23 h-9 lg:h-11 lg:w-41 bg-primary text-white rounded-sm font-medium">خرید کنید</button>
-                <button className="w-6 h-7 lg:h-11 lg:w-11 flex items-center justify-center bg-primary opacity-50 rounded-lg">
+                <button className="w-23 h-9 lg:h-11 lg:w-41 bg-primary text-white rounded-sm font-medium cursor-pointer hover:bg-orange-700">خرید کنید</button>
+                <button className="w-6 h-7 lg:h-11 lg:w-11 flex items-center justify-center bg-primary opacity-50 rounded-lg cursor-pointer">
                   <Image src={arrow} alt="arrow" className="lg:w-5"/>
                 </button>
               </div>
@@ -99,9 +99,9 @@ export default function AdvertisingBanner() {
               </div>
               <div className="flex items-center gap-2 mt-2">
                 <p className="text-primary text-xs lg:text-xl font-medium lg:ml-4">با گارانتی الماس پایتخت همانند گارانتی اپل</p>
-                <button className="w-23 h-9 lg:h-11 lg:w-41 bg-primary text-white rounded-sm font-medium">خرید کنید</button>
-                <button className="w-6 h-7 lg:h-11 lg:w-11 flex items-center justify-center bg-primary opacity-50 rounded-lg">
-                  <Image src={arrow} alt="arrow" className="lg:w-5"/>
+                <button className="w-23 h-9 lg:h-11 lg:w-41 bg-primary text-white rounded-sm font-medium cursor-pointer hover:bg-orange-700">خرید کنید</button>
+                <button className="w-6 h-7 lg:h-11 lg:w-11 flex items-center justify-center bg-primary opacity-50 rounded-lg cursor-pointer ">
+                  <Image src={arrow} alt="arrow" className="lg:w-5 "/>
                 </button>
               </div>
             </div>
@@ -123,8 +123,8 @@ export default function AdvertisingBanner() {
               </div>
               <div className="flex items-center gap-2 mt-2">
                 <p className="text-primary text-xs lg:text-xl font-medium lg:ml-4">با گارانتی الماس پایتخت همانند گارانتی اپل</p>
-                <button className="w-23 h-9 lg:h-11 lg:w-41 bg-primary text-white rounded-sm font-medium">خرید کنید</button>
-                <button className="w-6 h-7 lg:h-11 lg:w-11 flex items-center justify-center bg-primary opacity-50 rounded-lg">
+                <button className="w-23 h-9 lg:h-11 lg:w-41 bg-primary text-white rounded-sm font-medium cursor-pointer hover:bg-orange-700">خرید کنید</button>
+                <button className="w-6 h-7 lg:h-11 lg:w-11 flex items-center justify-center bg-primary opacity-50 rounded-lg cursor-pointer ">
                   <Image src={arrow} alt="arrow" className="lg:w-5"/>
                 </button>
               </div>

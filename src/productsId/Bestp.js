@@ -1,4 +1,4 @@
-import tow from "../assets/images/products/apple-2023-iphone-15-05.jpg";
+import tow from "../assets/images/products/iphone 15.webp";
 import three from "../assets/images/products/refurb-mba13-m3-midnight-202405.jpg";
 import six from "../assets/images/products/ebfb22c9-d191-48ae-a96d-15ece0955a2c.5b7b63432e60b6562249d9ed7a57d4bf.webp";
 import seven from "../assets/images/products/Apple_Watch_Ultra_2_LTE_49mm_Titanium_Orange_Ocean_Band_PDP_Image_Position-1__WWEN_2048x.webp";
@@ -15,18 +15,19 @@ export const Bestp = [
   {
     id: 1,
     slug: "iphone-15",
-    title: "آیفون 15",
-    price: 999000,
+    title: "  آیفون 15 256 گیگ ",
+    price: 1200000,
+    oldPrice: 1300000,
     image: tow,
-    oldPrice: null,
     category: "iPhone",
     description:
-      "آیفون ۱۵ با طراحی مدرن‌تر، دوربین اصلی ۴۸ مگاپیکسلی و تراشه A16 Bionic یک انتخاب عالی برای کاربرانی است که دنبال عملکرد بالا و ظاهری زیبا هستند. با Dynamic Island و USB-C، اپل تجربه‌ای کاملاً تازه را برای کاربران فراهم کرده است.",
+      "آیفون ۱۵ پرو جدیدترین پرچمدار اپل است که با بدنه تیتانیومی، تراشه قدرتمند A17 Pro و دوربین سه‌گانه با قابلیت تصویربرداری سینمایی عرضه شده است. این گوشی علاوه بر عملکرد بی‌نظیر، تجربه‌ای سریع‌تر و روان‌تر در اجرای بازی‌ها و اپلیکیشن‌ها ارائه می‌دهد. درگاه USB-C و Dynamic Island از دیگر ویژگی‌های جذاب آن هستند.",
+     
   },
   {
     id: 2,
     slug: "macbook-air-m3",
-    title: "مک بوک ایر M3",
+    title: "مک بوک ایر M3 ",
     price: 1500000,
     image: three,
     oldPrice: null,
