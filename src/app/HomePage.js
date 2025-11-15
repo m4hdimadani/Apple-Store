@@ -7,8 +7,8 @@ import Category from "@/components/Category";
 import CountDownPage from "@/components/CountDownPage";
 import Header from "@/components/Header";
 import InformationBanner from "@/components/InformationBanner";
-import { Bestp } from "@/productsId/Bestp";
-import { products } from "@/productsId/ProductsId";
+import WatchList from "@/components/WatchList";
+
 import React from "react";
 
 function HomePage() {
@@ -23,6 +23,7 @@ function HomePage() {
       <AdvertisingBanner />
       <BestProductsSwiper />
       <InformationBanner />
+      <WatchList />
     </>
   );
 }

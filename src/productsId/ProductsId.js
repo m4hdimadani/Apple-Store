@@ -213,7 +213,7 @@ export const products = [
     price: 15000000,
     image: eighty,
     oldPrice: 16000000,
-    category: "apple-watch",
+  
     description:
       "اپل واچ سری ۸ با بدنه آلومینیومی رنگ میدنایت ترکیبی از زیبایی و عملکرد است.",
   },
@@ -224,7 +224,6 @@ export const products = [
     price: 15000000,
     image: ninty,
     oldPrice: 16000000,
-    category: "apple-watch",
     description:
       "اپل واچ سری ۸ با بدنه آلومینیومی رنگ میدنایت ترکیبی از زیبایی و عملکرد است.",
   },
