@@ -11,14 +11,14 @@ function WatchList() {
   const watch = products.filter((i) => i.category === "apple-watch");
 
   return (
-    <div>
+    <div >
       <div className="container m-auto px-6 mt-10">
         <p className="text-[18px] md:text-3xl font-semibold">انواع اپل واچ</p>
       </div>
-      <div className=" flex gap-4 md:gap-6  pr-6 my-6">
-        <div className="flex flex-col gap-3 w-32 md:w-72 shrink-0">
-          <div className="bg-primary h-fit py-16 md:py-5 px-6 rounded-[10px]">
-            <Image src={nike} alt="nike" className="min-w-25 md:min-w-72" />
+      <div className=" flex  md:flex-row gap-4 pr-6 my-6 md:mr-45 ">
+        <div className="flex flex-col gap-3 w-32 md:w-82 shrink-0">
+          <div className="bg-primary py-16 h-fit md:py-1 px-6 rounded-[10px] md:h-[350px]">
+            <Image src={nike} alt="nike" className="min-w-25 md:min-w-32" />
           </div>
           <div>
             <button className="w-full flex-1 flex items-center justify-center gap-2 bg-[#FF510C0D] rounded-[10px] text-sm md:text-3xl text-primary font-medium">
@@ -27,31 +27,27 @@ function WatchList() {
             </button>
           </div>
         </div>
-        <div className="flex-1 min-w-0">
-          <section >
-          
-            <div className="container mx-auto px-4 md:px-8">
+        <div className="overflow-x-auto">
+          <section>
+            <div className="w-full md:pr-10">
               <Swiper
                 slidesPerView={2}
-                spaceBetween={16}
                 freeMode
-                
                 breakpoints={{
                   365: { slidesPerView: 1, spaceBetween: 10 },
-                  640: { slidesPerView: 2, spaceBetween: 20 },
-                  1024: { slidesPerView: 4, spaceBetween: 24 },
-                  1280: { slidesPerView: 5, spaceBetween: 28 },
+                  640: { slidesPerView: 1, spaceBetween: 20 },
+                  1024: { slidesPerView: 3 },
+                  1280: { slidesPerView: 3.6 , spaceBetween:-50},
                 }}
                 modules={[FreeMode, Pagination]}
                 className="mySwiper "
                 style={{
                   "--swiper-pagination-color": "#FF8B14",
-                  
                 }}
               >
                 {watch.map((i) => (
-                  <SwiperSlide key={i.id}>
-                    <div className="bg-[#f8f8f8] rounded-2xl shadow-sm hover:shadow-md transition duration-200 p-3 md:p-4 flex flex-col h-[280px] md:h-[350px] cursor-pointer ">
+                  <SwiperSlide key={i.id} >
+                    <div className="bg-[#f8f8f8] rounded-2xl shadow-sm hover:shadow-md transition duration-200 p-3 md:p-4 flex flex-col h-[280px] md:h-[350px] md:w-[300px]  cursor-pointer">
                       <div className="bg-white rounded-xl flex flex-col items-center justify-center flex-1 p-4">
                         <div className="flex justify-center gap-2 mb-3">
                           <span className="w-3 h-3 rounded-full bg-[#ffda79]" />
@@ -76,7 +72,7 @@ function WatchList() {
                         </p>
                       </div>
                       <div>
-                        <button className="absolute bottom-3 left-3 md:bottom-4 md:left-4 w-6 h-6 md:w-10 md:h-10 text-white bg-primary text-xl md:text-3xl rounded-md md:rounded-lg flex items-center justify-center shadow-sm hover:scale-105 transition-transform -m-1 cursor-pointer">
+                        <button className="absolute bottom-3 left-3 md:bottom-3 md:left-30 w-6 h-6 md:w-10 md:h-10 text-white bg-primary text-xl md:text-3xl rounded-md md:rounded-lg flex items-center justify-center shadow-sm hover:scale-105 transition-transform -m-1 cursor-pointer">
                           +
                         </button>
                       </div>
