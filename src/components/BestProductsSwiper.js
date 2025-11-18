@@ -71,7 +71,7 @@ function BestProductsSwiper() {
                       </p>
                     </div>
                     <div>
-                      <button className="absolute bottom-3 left-3 md:bottom-4 md:left-15 w-6 h-6 md:w-10 md:h-10 text-white bg-primary text-xl md:text-3xl rounded-md md:rounded-lg flex items-center justify-center shadow-sm hover:scale-105 transition-transform -m-1 cursor-pointer">
+                      <button className="absolute bottom-3 left-3 md:bottom-3 md:left-6 w-6 h-6 md:w-10 md:h-10 text-white bg-primary text-xl md:text-3xl rounded-md md:rounded-lg flex items-center justify-center shadow-sm hover:scale-105 transition-transform -m-1 cursor-pointer">
                         +
                       </button>
                     </div>

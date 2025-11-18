@@ -21,7 +21,7 @@ function WatchList() {
             <Image src={nike} alt="nike" className="min-w-25 md:min-w-32" />
           </div>
           <div>
-            <button className="w-full flex-1 flex items-center justify-center gap-2 bg-[#FF510C0D] rounded-[10px] text-sm md:text-3xl text-primary font-medium">
+            <button className="w-full flex-1 flex items-center justify-center gap-2 bg-[#FF510C0D] rounded-[10px] text-sm md:text-3xl text-primary font-medium cursor-pointer hover:bg-[#ff510c43]">
               <p>مشاهده همه</p>
               <Image src={arrow} alt="arrow" className="w-4 md:w-6 " />
             </button>

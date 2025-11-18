@@ -2,6 +2,7 @@
 
 import AdvertisingBanner from "@/components/AdvertisingBanner";
 import Banner from "@/components/Banner";
+import BannerTow from "@/components/BannerTow";
 import BestProductsSwiper from "@/components/BestProductsSwiper";
 import Category from "@/components/Category";
 import CountDownPage from "@/components/CountDownPage";
@@ -24,6 +25,7 @@ function HomePage() {
       <BestProductsSwiper />
       <InformationBanner />
       <WatchList />
+      <BannerTow />
     </>
   );
 }
