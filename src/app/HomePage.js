@@ -1,5 +1,6 @@
 "use client";
 
+import AdvantagesOfTheWebsite from "@/components/AdvantagesOfTheWebsite";
 import AdvertisingBanner from "@/components/AdvertisingBanner";
 import Banner from "@/components/Banner";
 import BannerTow from "@/components/BannerTow";
@@ -26,6 +27,7 @@ function HomePage() {
       <InformationBanner />
       <WatchList />
       <BannerTow />
+      <AdvantagesOfTheWebsite />
     </>
   );
 }
