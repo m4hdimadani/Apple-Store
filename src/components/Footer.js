@@ -35,8 +35,8 @@ function Footer() {
               <Image src={enamad} alt="enamad" className="w-15 lg:w-52"/>
             </div>
         </div>
-        <div>
-          <p></p>
+        <div className="text-center border-t-2 border-[#0000001a] py-4 lg:border-t-0 lg:bg-white lg:py-5 mt-4 lg:mt-8">
+          <p className="text-xs lg:text-base">تمامی حقوق برای<span className="text-primary"> وبسایت اپل استور</span> محفوظ است.</p>
         </div>
     </div>
   )
